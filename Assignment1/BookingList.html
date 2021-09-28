@@ -1,22 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta name = "viewport" content="width=device-width, inital-scale=1.0">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <meta charset="utf-8">
-  
-  <h2>Vaccine Appointment Bookings</h2>
+  <meta charset="utf-8">  
+  <h2 class="gridContainer">Vaccine Appointment Bookings</h2>
+<link rel="StyleSheet" href="StyleSheet.css">
+
 <script>
     $(document).ready( () => {
-    console.log(localStorage);
-    
+      var name = localStorage.getItem("nameID");
+      $("#printBook").append(name);
+      var time = localStorage.getItem("timeID");
+      $("#printBook1").append(time);
+      var ohip = localStorage.getItem("ohipID");
+      $("#printBook2").append(ohip);
+      var email = localStorage.getItem("emailID");
+      $("#printBook3").append(email);
+      var phone = localStorage.getItem("phoneID");
+      $("#printBook4").append(phone);
   });
     </script>
   
   </head>
 <body>
-
-<p id="printBook">localStorageswag</p>
+<div class="gridContainer">
+<p id="printBook">Name: </p><br>
+<p id="printBook1">time: </p><br>
+<p id="printBook2">OHIP: </p><br>
+<p id="printBook3">Email: </p><br>
+<p id="printBook4">Phone: </p><br>
 <a href="main.html">GO back</a>
+</div>
 </body>
 
 
