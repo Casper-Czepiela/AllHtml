@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head><title>Vaccine Booking</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready( () => {	
+   $("#submitBtn").click(function(){
+      var nID = $("#nameId").val();
+      localStorage.setItem("nameID",nID) 
+      var tID = $("#timeId").val();
+      localStorage.setItem("timeID",tID) 
+      var ohip = $("#ohipNum").val();
+      localStorage.setItem("ohipID",ohip) 
+      var eID = $("#emailId").val();
+      localStorage.setItem("emailID",eID) 
+      var pID = $("#phoneId").val();
+      localStorage.setItem("phoneID",pID)   
+    });
+
+
+   
+ 
+
+});
+</script>
+</head>
+<body>
+  <form>
+    name:<input type="text"  id="nameId"/>
+    <input type="text"  id="timeId" />
+    <input type="number"  id="ohipNum"/>
+    <input type="text"  id="emailId"/>
+    <input type="number"  id="phoneId"/>
+    <input type="submit" id="submitBtn" value="submit"/>
+    </form>
+    
+
+
+</body>
+
+</html>
