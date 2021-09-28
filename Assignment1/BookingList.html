@@ -5,23 +5,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <meta charset="utf-8">  
   <h2 class="gridContainer">Vaccine Appointment Bookings</h2>
-<link rel="StyleSheet" href="StyleSheet.css">
+<link rel="StyleSheet" href="/Assignment1/Css/StyleSheet.css">
 
-<script>
-    $(document).ready( () => {
-      var name = localStorage.getItem("nameID");
-      $("#printBook").append(name);
-      var time = localStorage.getItem("timeID");
-      $("#printBook1").append(time);
-      var ohip = localStorage.getItem("ohipID");
-      $("#printBook2").append(ohip);
-      var email = localStorage.getItem("emailID");
-      $("#printBook3").append(email);
-      var phone = localStorage.getItem("phoneID");
-      $("#printBook4").append(phone);
-  });
-    </script>
-  
+<script src="JS/ListBooking.js"></script>
   </head>
 <body>
 <div class="gridContainer">

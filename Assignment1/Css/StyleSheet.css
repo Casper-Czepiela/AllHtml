@@ -1,7 +1,12 @@
 
-  .gridContainer {display:grid; justify-content: center;}
+  .gridContainer {display:grid; justify-content: center; padding: 10px;}
    body{background-image: url("/Assignment1/Images/Vaccine.png");}
+  .textcolor{color:white} 
    p{color: white;}
    a{color: white;}
    h2{color: red;}
+   footer{color: red;}
+   h1{color:green;}
+   .link1 {flex:1 }
+   .link2 {flex:2}
 

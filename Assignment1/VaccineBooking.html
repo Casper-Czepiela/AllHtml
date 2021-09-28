@@ -4,35 +4,22 @@
   <title>Vaccine Booking</title>
   <meta name = "viewport" content="width=device-width, inital-scale=1.0">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-<script>
-$(document).ready( () => {	
-   $("#submitBtn").click(function(){
-      var nID = $("#nameId").val();
-      localStorage.setItem("nameID",nID) 
-      var tID = $("#timeId").val();
-      localStorage.setItem("timeID",tID) 
-      var ohip = $("#ohipNum").val();
-      localStorage.setItem("ohipID",ohip) 
-      var eID = $("#emailId").val();
-      localStorage.setItem("emailID",eID) 
-      var pID = $("#phoneId").val();
-      localStorage.setItem("phoneID",pID)   
-    });
-});
-</script>
+  <link rel="StyleSheet" href="/Assignment1/Css/StyleSheet.css">
+  <script src="JS/BookingForm.js"></script>
+<h2 class="gridContainer">Vaccine Booking</h2>
 </head>
 <body>
-  <form>
-    name:<input type="text"  id="nameId"/><br>
-    Time:<input type="text"  id="timeId" /><br>
-    OHIP#:<input type="number"  id="ohipNum"/><br>
-    Email:<input type="text"  id="emailId"/><br>
-    Phone:<input type="number"  id="phoneId"/><br>
-    <input type="submit" id="submitBtn" value="submit"/><br>
-    </form>
+  <form class="gridContainer">
+    <div class="textcolor">
+    name:<input type="text"  id="nameId" required/><br>
+    Time:<input type="text"  id="timeId" required/><br>
+    OHIP#:<input type="number"  id="ohipNum" required/><br>
+    Email:<input type="text"  id="emailId" required/><br>
+    Phone:<input type="number"  id="phoneId" required/><br>
+    <input type="submit" id="submitBtn" value="submit"/><br>   
+  </form>
     <a href="main.html">Return to main</a>
-
+  </div>  
 
 </body>
 
